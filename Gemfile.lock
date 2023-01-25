@@ -102,6 +102,8 @@ GEM
       rest-client
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    cssbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     csv (3.2.6)
     date (3.3.3)
     debug (1.7.1)
@@ -242,6 +244,8 @@ GEM
       netrc (~> 0.8)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sass-rails (6.0.0)
+      sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -308,6 +312,7 @@ DEPENDENCIES
   bootsnap
   capybara
   cloudinary (~> 1.16.0)
+  cssbundling-rails
   csv
   debug
   devise
@@ -322,6 +327,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4)
   rails_admin
+  sass-rails
   sassc-rails
   selenium-webdriver
   simple_form!

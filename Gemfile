@@ -84,3 +84,5 @@ gem 'pg_search', '~> 2.3.0'
 gem "turbolinks_render"
 gem "csv"
 gem 'rails_admin'
+gem "cssbundling-rails"
+gem 'sass-rails'
