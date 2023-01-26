@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   end
 
   get '/api/subjects/users/:id', to: 'subjects#get_subjects'
-  get 'api/subjects/post_subject', to: 'subjects#post_subject'
+  post 'api/subjects/post_subject', to: 'subjects#post_subject'
 
 
   get '/api/points/users/:id', to: 'points#get_all_points_by_user'

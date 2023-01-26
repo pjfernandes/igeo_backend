@@ -1,6 +1,6 @@
 class SubjectsController < ApplicationController
   #skip_before_action :authenticate_user!, only: %i[index]
-  skip_before_action :authenticate_user!, only: %i[get_subjects]
+  skip_before_action :authenticate_user!, only: %i[get_subjects post_subject]
 
   def index
     @subjects = Subject.includes(:points).all.where(user_id: current_user)
