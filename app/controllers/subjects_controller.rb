@@ -64,6 +64,15 @@ class SubjectsController < ApplicationController
     )
   end
 
+  def post_subject
+    @subject = Subject.new(subject_params)
+    if @subject.save
+      render json: {status: 'SUCCESS', message:'Saved subject', data:@subject}, status: :ok
+    else
+      render json: {status: 'ERROR', message:'subject not saved', data:@subject.erros}, status: :unprocessable_entity
+    end
+  end
+
   private
   def subject_params
     params.require(:subject).permit(:name, :user_id, :photo)
