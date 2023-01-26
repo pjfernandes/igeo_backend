@@ -66,7 +66,7 @@ class SubjectsController < ApplicationController
 
   private
   def subject_params
-    params.require(:subject).permit(:name, :teacher, :user_id, :photo)
+    params.require(:subject).permit(:name, :user_id, :photo)
   end
 
 end
